@@ -35,6 +35,28 @@
    --text-body:#C8CDD0;
    --text-heading:#F9F9F9;
 
+   --font-family-logo: "Lecrkerli One" , "Sans-serif";
+   --font-family-heading: "Baloo 2", "Sans-serif";
+   --font-family-body: "Open Sans", "Sans-serif"; 
+   
+
+
+   --text-logo: 400 2.5rem/1.2 var(--font-family-logo);
+
+   --text-md-heading:700 1.75rem/1.2 var(--font-family-heading);
+   --text-sm-heading: 700 1.125rem/1.2 var(--font-family-heading);
+
+
+   --text-md-body: 600 1rem/1.2 var(--font-family-body);
+   --text-sm-body: 600 0.875rem/1.2 var(--font-family-body);
+   --text-xs-body: 600 0.75rem/1.2 var(--font-family-body)
+
+
+
+
+
+  
+
 
 }
 
