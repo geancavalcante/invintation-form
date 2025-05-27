@@ -26,9 +26,13 @@ aside{
     
     
     padding: 5rem;
+    background-image: url(/assets/img/Background.png);
+    background-repeat:round;
+    
 
-    &.aside-conteiner{
+    & .aside-conteiner{
         max-width: 33rem;
+        
     }
 }
 
