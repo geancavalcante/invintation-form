@@ -16,14 +16,15 @@ main{
     overflow: auto;
     padding: 5rem;
 
-
-
+    & .main-conteiner{
+        max-width: 31rem;
+        
+    }
 
 
 }
 
-aside{
-    
+aside{  
     
     padding: 5rem;
     background-image: url(/assets/img/Background.png);
@@ -31,7 +32,20 @@ aside{
     
 
     & .aside-conteiner{
-        max-width: 33rem;
+        max-width: 31rem;
+
+        & h1{
+            font: var(--text-logo);
+            color:var(--pink) ;
+        }
+
+        & .text{
+            span{
+                font:var(--text-sm-body);
+                color: var(--text-heading);
+
+            }
+        }
         
     }
 }
