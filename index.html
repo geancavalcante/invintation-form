@@ -35,7 +35,111 @@
   
         <main>
             <div class="main-conteiner">
-                main
+                <h1>Crie seu convite</h1>
+
+                <div class="forms">
+               <form action="/" enctype="multipart/form-data">
+                    <fieldset>
+                        <div class="Frame-4">
+                            <img src="/assets/icons/calendar.svg" alt="ícone de calendário">
+                            <legend>Sobre o evento</legend>
+
+                            <div class="input-wrapper">
+                                <label for="title">Título</label>
+                                <input type="text" id="title" name="title" placeholder="Nome do evento">
+                            </div>
+
+                            <div class="flex">
+
+                                    <div class="input-wrapper">
+                                        <label for="start-datetime">ínicio</label>
+                                        <input type="datetime-local" id="start-datetime" name="start-datetime">
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <label for="and-datetime">Fim</label>
+                                        <input type="datetime-local" id="and-datetime" name="and-datetime">
+                                    </div>
+
+                            </div>
+                            
+                            <div class="flex">
+
+                                    <div class="checkbox-wrapper">
+                                        <span>Tipo</span>
+
+                                        <div class="flex">
+
+
+                                            <div class="conteiner-radio">
+
+                                                <img src="/assets/icons/building-2.svg" alt="ícone de um prédio">
+
+                                                <label for="type-inperson">Presencial</label>
+                                                <input type="radio" id="type-inperson" name="type">
+                                            </div>
+                                            
+                                            <div class="conteiner-radio">
+
+                                                <img src="/assets/icons/video.svg" alt="ícone de uma cámera de vídei">
+
+                                                <label for="type-online">Online</label>
+                                                <input type="radio" id="type-online" name="type">
+ 
+                                            </div>
+                                            
+                                        </div>
+
+                                        
+                                    </div>
+
+                                    <div class="input-wrapper">
+                                        <label for="location">Local</label>
+                                        <input type="text" id="location" name="location" placeholder="Link ou endereço">
+                                    </div>      
+
+                            </div>
+
+                            
+
+                            <div class="textarea-wrapper">
+                                <label for="description">Descrição</label>
+                                <textarea name="description" id="description" cols="50" rows="10" placeholder="Escreve sobre os detalhes do evento"></textarea>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="Frame-4">
+                            <img src="/assets/icons/paintbrush-vertical.svg" alt="ícone de pincel de tinta">
+                            <legend>Personalização</legend>
+
+
+                            
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="Frame-4">
+                            <img src="/assets/icons/contact.svg" alt="ícone de um crachá de uma pessoa">
+                            <legend>Dados para contato</legend>
+
+
+                            
+                        </div>
+                    </fieldset>
+
+                    <hr>
+                </form>
+
+                </div>
+                
                 
             </div>
             
