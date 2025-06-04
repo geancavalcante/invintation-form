@@ -10,6 +10,10 @@
     gap: 0.75rem ;
 }
 
+.gap-8{
+    gap: 0.5rem;
+}
+
 .gap-16{
     gap: 1rem;
 }
@@ -21,4 +25,21 @@
 .align-itens-end{
     align-items:end;
 
+}
+
+.align-content-baseline{
+    align-content: baseline;
+}
+
+.align-content-center{
+    align-content: center;
+}
+
+.align-self-center{
+    align-self: center;
+}
+
+
+.justify-content-center{
+    justify-content: center;
 }

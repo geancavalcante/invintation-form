@@ -65,6 +65,10 @@ h1{
     color: var(--text-heading);
 }
 
+img{
+    max-width: 100%;
+}
+
 .flex{
     margin-bottom: 1.5rem;
 }

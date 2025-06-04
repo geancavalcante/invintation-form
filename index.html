@@ -12,31 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-
 </head>
 <body>
-
     <div id="app">
         <aside>
             <div class="aside-conteiner">
                 <div class="title">
                     <img src="/assets/icons/Logo.svg" alt="">
-
                     <div class="text">
                         <h1>Festivite</h1>
                         <span>Crie um convite digital para o seu evento</span>
                     </div>
                 </div>
-                
-                
             </div>
-           
         </aside>
-  
         <main>
             <div class="main-conteiner">
                 <h1>Crie seu convite</h1>
-
                 <div class="forms">
                     <form action="/" enctype="multipart/form-data">
                         <fieldset>
@@ -44,109 +36,72 @@
                                 <div class="flex align-itens-center gap-12">
                                     <img src="/assets/icons/calendar.svg" alt="ícone de calendário">
                                     <legend>Sobre o evento</legend>
-
                                 </div>
-                                
                                 <div class="input-wrapper">
                                     <label for="title">Título</label>
                                     <input type="text" id="title" name="title" placeholder="Nome do evento">
                                 </div>
+                                <div class="flex gap-16">
+                                    <div class="input-wrapper">
+                                        <label for="start-datetime">ínicio</label>
+                                        <input type="datetime-local" id="start-datetime" name="start-datetime">
+                                    </div>
+                                    <div class="input-wrapper flex-1">
+                                        <label for="and-datetime">Fim</label>
+                                        <input type="datetime-local" id="and-datetime" name="and-datetime">
+                                    </div>
+                                </div>
+                                
 
                                 <div class="flex gap-16">
-
-                                        <div class="input-wrapper">
-                                            <label for="start-datetime">ínicio</label>
-                                            <input type="datetime-local" id="start-datetime" name="start-datetime">
-                                        </div>
-
-                                        <div class="input-wrapper flex-1">
-                                            <label for="and-datetime">Fim</label>
-                                            <input type="datetime-local" id="and-datetime" name="and-datetime">
-                                        </div>
-
-                                </div>
-                                
-                                <div class="flex">
-
-                                        <div class="checkbox-wrapper">
-                                            <label for="type-inperson">Tipo</label>
-
-                                            <div class="flex">
-
-
-                                                <div class="conteiner-radio">
-
-                                                    <div class="flex">
-                                                        <img src="/assets/icons/building-2.svg" alt="ícone de um prédio">
-                                                        <label for="type-inperson">Presencial</label>
-                                                    </div>
-                                                    
-                                                    <input type="radio" id="type-inperson" name="type">
-                                                </div>
-                                                
-                                                <div class="conteiner-radio">
-
-                                                    <img src="/assets/icons/video.svg" alt="ícone de uma cámera de vídei">
-
-                                                    <label for="type-online">Online</label>
-                                                    <input type="radio" id="type-online" name="type">
-    
-                                                </div>
-                                                
-                                            </div>
-
+                                    <div>
+                                        <label for="type-inperson">Tipo</label>
+                                        <div class="radio-wrapper flex">
                                             
+                                                <div class="radio-inner flex justify-content-center gap-8 ">
+
+                                                            <img src="/assets/icons/building-2.svg" alt="ícone de um prédio">
+                                                            <label for="type-inperson">Presencial</label>
+                                                            <input type="radio" id="type-inperson" name="type" value="Presencial"> 
+                                                        
+                                                </div>
+                                                <div class="radio-inner justify-content-center flex flex-1 gap-8">
+                                                    <img src="/assets/icons/video.svg" alt="ícone de uma cámera de vídei">
+                                                    <label for="type-online">Online</label> 
+                                                        <input type="radio" id="type-online" name="type" value="Online">
+                                                </div>
                                         </div>
-
-                                        <div class="input-wrapper">
-                                            <label for="location">Local</label>
-                                            <input type="text" id="location" name="location" placeholder="Link ou endereço">
-                                        </div>      
-
+                                    </div> 
+                                    <div class="input-wrapper flex-1">
+                                        <label for="location">Local</label>
+                                        <input type="text" id="location" name="location" placeholder="Link ou endereço">
+                                    </div>
                                 </div>
-
-                                
-
-                                <div class="textarea-wrapper">
+                                <div class="textarea-wrapper ">
                                     <label for="description">Descrição</label>
                                     <textarea name="description" id="description" cols="50" rows="10" placeholder="Escreve sobre os detalhes do evento"></textarea>
                                 </div>
-
-
-
-
-
-
                             </div>
                         </fieldset>
-
                         <fieldset>
                             <div class="Frame-4">
                                 <img src="/assets/icons/paintbrush-vertical.svg" alt="ícone de pincel de tinta">
                                 <legend>Personalização</legend>
-
-
-                                
                             </div>
                         </fieldset>
-
                         <fieldset>
                             <div class="Frame-4">
                                 <img src="/assets/icons/contact.svg" alt="ícone de um crachá de uma pessoa">
                                 <legend>Dados para contato</legend>
-
-
-                                
                             </div>
                         </fieldset>
                         <hr>
+
+                        <input type="submit">
                     </form>
-                </div>            
+                </div>
             </div>
-        </main>    
+        </main>
     </div>
-    
-    
-    
 </body>
 </html>

@@ -1,0 +1,62 @@
+.radio-wrapper{
+    /*background-color: var(--input-base);*/
+
+
+    height: 55px;
+    border-radius: 0.5rem;
+
+    border: 2px solid var(--input-stroke);
+    padding: 0.25rem 0.25rem;
+
+    gap: 4px;
+
+    
+    
+
+}
+
+.radio-inner{
+    position: relative;
+
+    width:6.80rem;
+    
+    padding-inline: 1rem 1rem;
+    padding-top: 0.7rem;
+
+    & img{
+        
+        width: 1rem;
+        height: 1rem;
+    }
+
+    margin-bottom: 0;
+       
+ 
+
+        
+        
+       
+        
+ 
+  
+}
+
+
+
+
+
+input[type="radio"]{
+   position: absolute;
+   inset: 0;
+   z-index: -1;
+
+    height: 100%;
+    width: 100%;
+    
+    border-radius: none;
+    border: none;
+  
+
+    
+
+}
