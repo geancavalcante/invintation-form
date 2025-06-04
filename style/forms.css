@@ -1,0 +1,22 @@
+@import url(fields/index.css);
+
+form{
+    margin-top: 2.5rem;
+}
+
+fieldset{
+    border: none;
+    display: grid;
+    gap: 3rem;
+
+}
+
+fieldset + fieldset{
+    margin-top: 3rem;
+}
+
+legend{
+    font: var(--text-sm-heading);
+    color: var(--text-heading);
+}
+

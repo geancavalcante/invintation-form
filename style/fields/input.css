@@ -1,0 +1,29 @@
+input,select,textarea{
+    appearance: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid var(--input-stroke);
+
+    padding: 1rem 0.75rem;
+
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    font-family:var(--font-family-body) ;
+    
+}
+
+input{
+    margin-bottom: 1rem;
+}
+
+label{
+    font: var(--text-sm-body);
+    color: var(--text-body);
+
+    display: inline-block;
+
+    margin-bottom: 0.75rem;
+
+
+}
+
