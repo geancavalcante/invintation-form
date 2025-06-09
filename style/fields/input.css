@@ -3,13 +3,19 @@ input,select,textarea{
     width: 100%;
     border-radius: 0.5rem;
     border: 2px solid var(--input-stroke);
-
     padding: 1rem 0.75rem;
 
     background-color: var(--input-base);
     color: var(--input-placeholder);
     font:var(--text-sm-body);
     
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:var(--brand-light);
+    outline: var(--brand-light);
 }
 
 input{
