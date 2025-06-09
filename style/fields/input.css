@@ -8,7 +8,7 @@ input,select,textarea{
 
     background-color: var(--input-base);
     color: var(--input-placeholder);
-    font-family:var(--font-family-body) ;
+    font:var(--text-sm-body);
     
 }
 

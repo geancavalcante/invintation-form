@@ -1,5 +1,5 @@
 .radio-wrapper{
-    /*background-color: var(--input-base);*/
+    background-color: var(--input-base);
 
 
     height: 55px;
@@ -8,7 +8,7 @@
     border: 2px solid var(--input-stroke);
     padding: 0.25rem 0.25rem;
 
-    gap: 4px;
+    
 
     
     
@@ -17,19 +17,29 @@
 
 .radio-inner{
     position: relative;
+    border-radius: 0.25rem;
 
-    width:6.80rem;
+    
     
     padding-inline: 1rem 1rem;
     padding-top: 0.7rem;
 
-    & img{
-        
-        width: 1rem;
-        height: 1rem;
-    }
 
     margin-bottom: 0;
+
+    
+  
+
+    &:hover, &:has(input:focus){
+        background-color: var(--shape-body);
+
+        & svg path{
+            stroke:var(--brand-light) ;
+        }
+
+        
+        
+    }
        
  
 
@@ -43,8 +53,6 @@
 
 
 
-
-
 input[type="radio"]{
    position: absolute;
    inset: 0;
@@ -55,6 +63,8 @@ input[type="radio"]{
     
     border-radius: none;
     border: none;
+
+    
   
 
     
