@@ -47,9 +47,9 @@
    --text-sm-heading: 700 1.125rem/1.2 var(--font-family-heading);
 
 
-   --text-md-body: 400 1rem/1.2 var(--font-family-body);
-   --text-sm-body: 400 0.875rem/1.2 var(--font-family-body);
-   --text-xs-body: 400 0.75rem/1.2 var(--font-family-body)
+   --text-md-body: 600 1rem/1.2 var(--font-family-body);
+   --text-sm-body: 600 0.875rem/1.2 var(--font-family-body);
+   --text-xs-body: 600 0.75rem/1.2 var(--font-family-body)
 
 
 

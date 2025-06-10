@@ -32,6 +32,10 @@
 
     &:hover, &:has(input:focus){
         background-color: var(--shape-body);
+        
+        label{
+            color: var(--text-heading)
+        }
 
         & svg path{
             stroke:var(--brand-light) ;
