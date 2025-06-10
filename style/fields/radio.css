@@ -1,76 +1,133 @@
-.radio-wrapper{
-    background-color: var(--input-base);
+.Frame-4 .input-wrapper{
 
 
-    height: 55px;
-    border-radius: 0.5rem;
-
-    border: 2px solid var(--input-stroke);
-    padding: 0.25rem 0.25rem;
-
-    
-
-    
-    
-
-}
-
-.radio-inner{
-    position: relative;
-    border-radius: 0.25rem;
-
-    
-    
-    padding-inline: 1rem 1rem;
-    padding-top: 0.7rem;
 
 
-    margin-bottom: 0;
+    & .radio-wrapper{
+        background-color: var(--input-base);
 
-    
-  
+        height: 55px;
+        padding: 0.25rem 0.25rem;
 
-    &:hover, &:has(input:focus){
-        background-color: var(--shape-body);
-        
-        label{
-            color: var(--text-heading)
-        }
+        border-radius: 0.5rem;
+        border: 2px solid var(--input-stroke);
 
-        & svg path{
-            stroke:var(--brand-light) ;
-        }
+        & .radio-inner{
+            
+            label{
+                color: var(--input-placeholder);
+            }
 
-        
-        
+            position: relative;
+            
+
+            input[type="radio"]{
+                position: absolute;
+                inset: 0;
+                z-index: -1;
+                height: 100%;
+                width: 100%;
+                border-radius: none;
+                border: none;
+            }
+     
+            border-radius: 0.25rem;
+
+            padding-inline: 1rem 1rem;
+            padding-top: 0.7rem;
+
+            margin-bottom: 0;
+
+            &:hover, &:has(input:focus){
+                background-color: var(--shape-body);
+                
+                & label{
+                    color: var(--text-heading);
+                }
+
+                & svg path{
+                    stroke:var(--brand-light) ;
+                }               
+                
+            }
+       }
     }
-       
- 
-
-        
-        
-       
-        
- 
-  
 }
 
 
 
-input[type="radio"]{
-   position: absolute;
-   inset: 0;
-   z-index: -1;
+.Frame-5 .radio-inner{
 
-    height: 100%;
-    width: 100%;
+
+
+
+    input[type="radio"]{
+        position: relative;
+        border-radius: 100%;
+        z-index: auto;
+        border: 5px solid var(--shape-button);
+        height: 1.75rem;
+        
+
+        &:hover, &:focus{
+            outline: 3px solid  var(--brand-light);
+
+    }
+
+    }
+
+    & input[id="light-blue"]{
+        background-color: var(--brand-light);
+    }
+
+    & input[id="navy"]{
+        background-color: var(--navy);
+    }
+
+    & input[id="purple"]{
+        background-color: var(--purple);
+    }
+
+    & input[id="fuschia"]{
+        background-color: var(--fuschia);
+    }
+
+    & input[id="pink"]{
+        background-color: var(--pink);
+    }
+
+    & input[id="red"]{
+        background-color: var(--danger);
+    }
+
+    & input[id="orange"]{
+        background-color: var(--orange);
+    }
+
+    & input[id="yellow"]{
+        background-color: var(--yellow);
+    }
+
+    & input[id="lime"]{
+        background-color: var(--lime);
+    }
+
+    & input[id="green"]{
+        background-color: var(--green);
+    }
+
+    & input[id="cyan"]{
+        background-color: var(--cyan);
+    }
+
     
-    border-radius: none;
-    border: none;
+
+   
+
+
+
 
     
-  
 
     
-
 }

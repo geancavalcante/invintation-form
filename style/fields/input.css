@@ -24,7 +24,7 @@ input{
 
 label{
     font: var(--text-sm-body);
-    color: var(--text-body);
+    color: var(--text-heading);
 
     display: inline-block;
 
@@ -35,7 +35,7 @@ label{
 
 input[type="datetime-local"]{
     text-transform: uppercase;
-    position: relative;
+    
 
     &::-webkit-calendar-picker-indicator{
         opacity: 0;
