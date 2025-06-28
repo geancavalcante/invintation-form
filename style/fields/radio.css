@@ -1,8 +1,6 @@
 .Frame-4 .input-wrapper{
 
 
-
-
     & .radio-wrapper{
         background-color: var(--input-base);
 
@@ -56,78 +54,79 @@
 
 
 
-.Frame-5 .radio-inner{
+.Frame-5{
 
+    & .input-wrapper:nth-child(2){
 
-
-
-    input[type="radio"]{
-        position: relative;
-        border-radius: 100%;
-        z-index: auto;
-        border: 5px solid var(--shape-button);
-        height: 1.75rem;
-        
-
-        &:hover, &:focus{
-            outline: 3px solid  var(--brand-light);
-
-    }
-
-    }
-
-    & input[id="light-blue"]{
-        background-color: var(--brand-light);
-    }
-
-    & input[id="navy"]{
-        background-color: var(--navy);
-    }
-
-    & input[id="purple"]{
-        background-color: var(--purple);
-    }
-
-    & input[id="fuschia"]{
-        background-color: var(--fuschia);
-    }
-
-    & input[id="pink"]{
-        background-color: var(--pink);
-    }
-
-    & input[id="red"]{
-        background-color: var(--danger);
-    }
-
-    & input[id="orange"]{
-        background-color: var(--orange);
-    }
-
-    & input[id="yellow"]{
-        background-color: var(--yellow);
-    }
-
-    & input[id="lime"]{
-        background-color: var(--lime);
-    }
-
-    & input[id="green"]{
-        background-color: var(--green);
-    }
-
-    & input[id="cyan"]{
-        background-color: var(--cyan);
-    }
-
+        & .radio-inner{
     
 
-   
+            input[type="radio"]{
+                position: relative;
+                border-radius: 100%;
+                z-index: auto;
+                border: 5px solid var(--shape-button);
+                height: 1.75rem;
+
+                &:hover, &:focus{
+                    outline: 3px solid  var(--brand-light);
+                }
+            }
+
+            
+
+            & input[id="light-blue"]{
+                background-color: var(--brand-light);
+            }
+
+            & input[id="navy"]{
+                background-color: var(--navy);
+            }
+
+            & input[id="purple"]{
+                background-color: var(--purple);
+            }
+
+            & input[id="fuschia"]{
+                background-color: var(--fuschia);
+            }
+
+            & input[id="pink"]{
+                background-color: var(--pink);
+            }
+
+            & input[id="red"]{
+                background-color: var(--danger);
+            }
+
+            & input[id="orange"]{
+                background-color: var(--orange);
+            }
+
+            & input[id="yellow"]{
+                background-color: var(--yellow);
+            }
+
+            & input[id="lime"]{
+                background-color: var(--lime);
+            }
+
+            & input[id="green"]{
+                background-color: var(--green);
+            }
+
+            & input[id="cyan"]{
+                background-color: var(--cyan);
+            }
+
+            
 
 
 
 
-    
 
-    
+        }
+    }   
 }
+
+
