@@ -56,6 +56,9 @@
 
 .Frame-5{
 
+   
+
+
     & .input-wrapper:nth-child(2){
 
         & .radio-inner{
@@ -126,7 +129,47 @@
 
 
         }
-    }   
+
+    } & .input-wrapper:nth-child(3){
+        
+
+        & .radio-inner{
+
+            display: grid;
+
+            text-align: center;
+
+            gap: 8px;
+
+            position: relative;
+
+            padding: 4px 4px 8px 4px;
+
+            width: 8.375rem;
+            height:6.4375rem ;
+
+            border-radius: 8px;
+            
+            img{
+                width: 100%;
+            }
+
+            
+
+            input[type="radio"]{
+                position: absolute;
+                inset: 0;
+                z-index: -1;
+                height: 100%;
+            }
+
+            &:hover, &:focus{
+                outline: 3px solid var(--brand-light);
+            }
+
+        }
+
+    }
 }
 
 
