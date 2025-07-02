@@ -36,7 +36,7 @@
 
             margin-bottom: 0;
 
-            &:hover, &:has(input:focus){
+            &:hover, &:has(input:focus, input:checked){
                 background-color: var(--shape-body);
                 
                 & label{
@@ -71,7 +71,7 @@
                 border: 5px solid var(--shape-button);
                 height: 1.75rem;
 
-                &:hover, &:focus{
+                &:hover, &:checked{
                     outline: 3px solid  var(--brand-light);
                 }
             }
@@ -162,7 +162,7 @@
                 width: 100%;     
             }
 
-            &:hover, &:focus{
+            &:hover, &:has(input:focus, input:checked){
                 outline: 3px solid var(--brand-light);
             }
 
