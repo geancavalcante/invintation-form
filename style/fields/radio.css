@@ -131,36 +131,35 @@
         }
 
     } & .input-wrapper:nth-child(3){
-        
+
 
         & .radio-inner{
 
-            display: grid;
-
             text-align: center;
-
-            gap: 8px;
 
             position: relative;
 
-            padding: 4px 4px 8px 4px;
+            padding: 0.25rem 0.25rem 0.5rem 0.25rem;
 
             width: 8.375rem;
             height:6.4375rem ;
 
-            border-radius: 8px;
+            border-radius: 0.5rem;
             
             img{
                 width: 100%;
+                
             }
 
             
 
             input[type="radio"]{
+                background-color: var(--shape-button);
                 position: absolute;
                 inset: 0;
                 z-index: -1;
                 height: 100%;
+                width: 100%;     
             }
 
             &:hover, &:focus{
