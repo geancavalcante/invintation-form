@@ -5,6 +5,7 @@ form{
 }
 
 fieldset{
+    width: 35rem;
     border: none;
     display: grid;
     gap: 3rem;
