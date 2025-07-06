@@ -20,7 +20,44 @@ textarea:focus{
 
 input{
     margin-bottom: 1rem;
+
+    &:invalid{
+        border:0.125rem solid var(--danger);
+    }
+
+
 }
+
+
+.input-wrapper{
+
+    &:has(input:invalid ~ .conteiner-error){
+         & .conteiner-error{
+            background-image: url(../../assets/icons/circle-alert.svg);
+            background-repeat: no-repeat;
+            background-size:contain ;
+
+            & span::before{
+                margin-left:1.4375rem;
+                content: "Campo obrigatório";
+                color: var(--danger);
+                font: var(--text-xs-body);
+            }
+        }
+    }
+
+    &:has(input:valid)~.conteiner-error{
+        & .conteiner-error{
+            display: none;
+        }
+
+    }
+
+
+
+
+}
+
 
 label{
     font: var(--text-sm-body);

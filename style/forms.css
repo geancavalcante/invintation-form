@@ -21,7 +21,9 @@ legend{
     color: var(--text-heading);
 }
 
-.Frame-4{
+.Frame-4,.Frame-5,.Frame-6, .input-wrapper{
     margin-bottom: 0;
 }
+
+
 
