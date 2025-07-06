@@ -1,0 +1,71 @@
+.dropezone{
+   position: relative;
+   flex-direction: column;
+
+   
+    & input{
+        background-color:var(--shape-body) ;
+        height: 3rem;
+        width: 23rem;   
+
+        margin-bottom: 0;
+        
+
+        border: none; 
+
+        &::-webkit-file-upload-button{
+        opacity: 0;
+       }
+
+    }
+
+   
+
+    & .conteiner{
+
+        position: absolute;
+        background-color: var(--shape-button);
+        width: 7.4375rem;
+        height: 2.5rem;
+
+        padding: 0.25rem 0.75rem;
+        border-radius: 0.5rem;
+
+        label{
+            margin-top: 0.9375rem;
+        }
+
+        
+    
+
+    }
+
+    
+
+
+ 
+
+    &:has(input[type="file"]:not(:focus) ~.conteiner-error){
+        & .conteiner-error{
+
+            background-image:url(../../assets/icons/circle-alert.svg);
+            background-repeat: no-repeat;
+            background-size: contain;  
+
+            span::before{
+                margin-left: 1.4375rem;
+                content:"Campo Obrigatório";
+                color: var(--danger);
+                font:var(--text-xs-body);
+            }
+            
+        }
+    }
+
+    & input:valid ~.conteiner-error{
+        display: none;
+    }
+
+    
+
+}

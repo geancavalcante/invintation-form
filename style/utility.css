@@ -30,6 +30,14 @@
     align-items:center ;
 }
 
+.align-self-center{
+    align-self: center;
+}
+
+.align-content-center{
+    align-content: center;
+}
+
 .align-itens-end{
     align-items:end;
 

@@ -176,6 +176,10 @@
 
     } & .input-wrapper:nth-child(4){
 
+        & > div{
+            width: 11rem;
+        }
+
         margin-top: 1.75rem;
 
         & .radio-inner{
