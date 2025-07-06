@@ -71,7 +71,7 @@
                 border: 5px solid var(--shape-button);
                 height: 1.75rem;
 
-                &:hover, &:checked{
+                &:hover, &:checked, &:focus{
                     outline: 3px solid  var(--brand-light);
                 }
             }
@@ -155,15 +155,21 @@
 
             input[type="radio"]{
                 background-color: var(--shape-button);
+                
                 position: absolute;
                 inset: 0;
                 z-index: -1;
                 height: 100%;
-                width: 100%;     
+                width: 100%;    
+                
+                &:focus{
+                  border-color: var(--shape-button);  
+                }
             }
 
-            &:hover, &:has(input:focus, input:checked){
+            &:hover, &:has(input:checked){
                 outline: 3px solid var(--brand-light);
+                
             }
 
         }
