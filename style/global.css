@@ -48,7 +48,7 @@
 
 
    --text-md-body: 600 1rem/1.2 var(--font-family-body);
-   --text-sm-body: 400 0.875rem/1.2 var(--font-family-body);
+   --text-sm-body: 600 0.875rem/1.2 var(--font-family-body);
    --text-xs-body: 600 0.75rem/1.2 var(--font-family-body)
 
 
@@ -71,5 +71,15 @@ img{
 
 .flex{
     margin-bottom: 1.5rem;
+}
+
+a{
+    font: var(--text-sm-body);
+    color: var(--brand-light);
+
+}
+
+hr{
+    width: 35rem;
 }
 

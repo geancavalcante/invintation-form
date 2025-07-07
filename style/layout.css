@@ -57,3 +57,6 @@ aside{
     }
 }
 
+footer + div{
+    width: 35rem;
+}

@@ -91,7 +91,11 @@
                                 </div>
                                 <div class="textarea-wrapper ">
                                     <label for="description">Descrição</label>
-                                    <textarea name="description" id="description" cols="50" rows="6.8" placeholder="Escreve sobre os detalhes do evento"></textarea>
+                                    <textarea name="description" id="description" cols="50" rows="6.8" placeholder="Escreve sobre os detalhes do evento" required></textarea>
+
+                                    <div class="conteiner-error">
+                                        <span class="error"></span>
+                                    </div>
                                 </div>
                             </div>
                         </fieldset>
@@ -252,7 +256,7 @@
                                         <label for="cober-photo">Foto de capa</label>
 
                                         <div class="dropezone flex flex-1">
-                                            <input type="file" id="cober-photo" name="cober-photo" required accept="image/">
+                                            <input type="file" id="cober-photo" name="cober-photo" required accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" >
 
                                             <div class="conteiner flex align-itens-center gap-8">
                                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -299,15 +303,43 @@
                                     <input type="tel" id="tephone" name="telephone" placeholder="(99)99999-9999">
 
                                 </div>
-
-
                             </div>
-
-                           
-
-
                         </fieldset>
                         <hr>
+                        <footer>
+
+                    
+                            <div class="flex gap-12">
+                                <input type="checkbox" name="terms-and-conditions-privacy-policy" id="terms-and-conditions-privacy-policy">
+                                
+                                <label for="terms-and-conditions_privacy">Li e concordo com os <a href="/">Termos e condições</a> e com a <a href="/">Política de Privacidade</a></label>
+                            </div>
+
+                            <div class="flex gap-12">
+                                
+
+                            <input type="checkbox" name="email-update-and-promotion" id="email-update-and-promotion" checked>
+                            <label for="email-update-and-promotion">Aceito receber atualizações e promoções por e-mail</label>
+  
+                            </div>
+
+                            <div class="flex gap-12">
+
+                                 <input type="checkbox" name="updates-and-promotions-by-sms" id="updates-and-promotions-by-sms">
+                                <label for="updates-and-promotions-by-sms">Aceito receber atualizações e promoções por SMS</label>
+
+                            </div>                  
+                        </footer>
+                        <div class="flex justify-content-end">
+                            <div class="input-submit flex align-itens-center justify-content-center gap-8">
+
+                                <input type="submit" name="submit" id="submit">
+                                <img src="assets/icons/ticket.svg" alt="ícone de um convite">
+                                <label for="submit">Gerar Convite</label>
+                            </div>
+
+                        </div>
+                     
                     </form>
                 </div>
             </div>

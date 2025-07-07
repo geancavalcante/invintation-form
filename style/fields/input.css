@@ -21,12 +21,37 @@ textarea:focus{
 input{
     margin-bottom: 1rem;
 
+}
+
+input,textarea{
     &:invalid{
         border:0.125rem solid var(--danger);
     }
 
+}
+
+.textarea-wrapper{
+
+    &:has(textarea:invalid ~ .conteiner-error){
+        & .conteiner-error{
+            background-image: url(../../assets/icons/circle-alert.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            & span::before{
+                margin-left: 1.4375rem;
+                content: "Campo obrigatório";
+                color: var(--danger);
+                font: var(--text-xs-body);
+            }
+    }
 
 }
+
+
+
+}
+
 
 
 .input-wrapper{
@@ -78,5 +103,29 @@ input[type="datetime-local"]{
         opacity: 0;
 
     }
+}
+
+.input-submit{
+    position: relative;
+    width: 11.0625rem;
+    height: 3rem;
+
+    background-color: var(--brand-light);
+    border-radius:0.75rem ;
+
+    & input{
+        position: absolute;
+        z-index: -1;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+
+    }
+
+    & label{
+        margin-top: 0.625rem;
+    }
+
+    
 }
 
